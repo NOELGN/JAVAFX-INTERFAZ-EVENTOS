@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.tesji.eventosteclado.controlador.EventController">
+   <children>
+      <Label layoutX="186.0" layoutY="105.0" stylesheets="@../estilos/stylejilo.css" text="Nombre">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="159.0" layoutY="193.0" text="Edad">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="101.0" layoutY="239.0" text="Carrera">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="161.0" layoutY="147.0" prefHeight="27.0" prefWidth="76.0" text="Apellidos">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtNombre" focusColor="#ef1c1c" layoutX="260.0" layoutY="118.0" onKeyTyped="#txtNombreKeyTyped" prefHeight="25.0" prefWidth="273.0" stylesheets="@../estilos/stylejilo.css" />
+      <JFXTextField fx:id="txtApellidos" focusColor="#ef1c1c" layoutX="251.0" layoutY="148.0" onKeyTyped="#txtApellidosKeyTyped" prefHeight="25.0" prefWidth="282.0" />
+      <JFXTextField fx:id="txtEdad" focusColor="#ef1c1c" layoutX="225.0" layoutY="194.0" onKeyTyped="#txtEdadKeyTyped" prefHeight="25.0" prefWidth="126.0" />
+      <JFXComboBox fx:id="cmbCarrera" focusColor="#ef1c1c" layoutX="161.0" layoutY="240.0" prefHeight="25.0" prefWidth="374.0" promptText="                                            seleccionar" unFocusColor="#330f0f" />
+      <JFXButton layoutX="448.0" layoutY="474.0" style="-fx-background-color: #6f6f6f;" text="Nuevo" textFill="#000000ec">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="275.0" layoutY="476.0" style="-fx-background-color: #6f6f6f;" text="Registrar" textFill="#000000eb">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="118.0" layoutY="475.0" style="-fx-background-color: #df5656;" text="Salir" textFill="#000000e7">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <Separator layoutX="2.0" layoutY="43.0" prefHeight="0.0" prefWidth="600.0" />
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="45.0" prefWidth="563.0" styleClass="personalizado" stylesheets="@../estilos/stylejilo.css">
+         <children>
+            <Label layoutX="211.0" layoutY="9.0" styleClass="titulo2" stylesheets="@../estilos/stylejilo.css" text="Registro Alumnos">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Separator layoutX="84.0" layoutY="44.0" orientation="VERTICAL" prefHeight="487.0" prefWidth="6.0" />
+      <Pane layoutX="-4.0" layoutY="44.0" prefHeight="490.0" prefWidth="89.0" styleClass="colorPanel" stylesheets="@../estilos/stylejilo.css" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="8.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/Logo-Replikat-innovacion-imagen-negro-transparente.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="85.0" layoutY="440.0" prefHeight="25.0" prefWidth="476.0" />
+   </children>
+</AnchorPane>
